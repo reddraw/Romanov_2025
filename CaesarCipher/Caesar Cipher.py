@@ -1,4 +1,4 @@
-def Cipher(slovo, kod):
+def Encrypt(slovo, kod):
     slovo2=''
     for i in range(len(slovo)):
         number = ord(slovo[i])
@@ -15,14 +15,28 @@ def Cipher(slovo, kod):
             elif(number+kod>=91):
                 slovo2+=chr(number+kod-26)
     return (slovo2)
-
+def Decrypt(slovo, kod):
+    slovo2 = ''
+    for i in range(len(slovo)):
+        number = ord(slovo[i])
+        if (number >= 32 and number <= 64):
+            slovo2 += slovo[i]
+        elif (number > 96 and number < 123):
+            if (number - kod > 96):
+            elif (number - kod <=96):
+                slovo2 += chr(number - kod + 26)
+        elif (number < 91 and number > 64):
+            if (number - kod > 64):
+                slovo2 += chr(number - kod)
+            elif (number - kod <= 64):
+                slovo2 += chr(number - kod + 26)
+    return (slovo2)
 def Runner(show):
-    if(Cipher("Bebra",4)=="Fifve"):
+    if(Encrypt("Bebra", 4)=="Fifve" and Decrypt("Fifve",4)=="Bebra"):
         show+=1
-    if(Cipher("Among the stars I'm the only flying!",11)
-    =="Lxzyr esp delcd T'x esp zywj qwjtyr!"):
+    if(Encrypt("Among Us!!",11)=="Lxzyr Fd!!" and Decrypt("Lxzyr Fd!!",11)=="Among Us!!"):
         show+=1
-    if(Cipher("zhakwong amm", 8)=="hpisewvo iuu"):
+    if(Encrypt("waskf I'mhjlk kjl",3)=="zdvni L'pkmon nmo" and Decrypt("zdvni L'pkmon nmo",3)=="waskf I'mhjlk kjl"):
         show+=1
     return show
 show=0
@@ -33,4 +47,6 @@ if(slovo=="TEST"):
 else:
     kod = int(input("Input key int"))
     print(slovo, "- main word")
-    print(Cipher(slovo, kod), "- ciphered word")
+    ciphered=Encrypt(slovo,kod)
+    print(ciphered,"- ciphered word")
+    print(Decrypt(ciphered, kod), "- deciphered word")
