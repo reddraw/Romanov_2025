@@ -23,6 +23,7 @@ def Decrypt(slovo, kod):
             slovo2 += slovo[i]
         elif (number > 96 and number < 123):
             if (number - kod > 96):
+                slovo2 += chr(number - kod)
             elif (number - kod <=96):
                 slovo2 += chr(number - kod + 26)
         elif (number < 91 and number > 64):
