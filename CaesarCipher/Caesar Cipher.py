@@ -42,6 +42,7 @@ def Runner(show):
     return show
 show=0
 slovo = str(input("Print in case you want: 1) TEST to test the program, 2) any other word to cipher it"))
+
 if(slovo=="TEST"):
     show=Runner(show)
     print("Number of Tests passed - ",show,"/3")
