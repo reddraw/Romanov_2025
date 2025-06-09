@@ -34,3 +34,10 @@ User writes 4 or any other number and the program breaks
 
 In:4
 Out:"Goodbye"
+
+Installation.
+
+1. Make sure your Python version is 3.9.
+2. Install repository from github
+3. Open .py file in any Python compiler.
+4. Press F5.
