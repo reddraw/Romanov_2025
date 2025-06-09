@@ -21,11 +21,11 @@ In: CGZLOHSW
 Out:"Enter the code"
 In: negr
 Out: "OBSTACLE"
+
 3. Test
 The program passes its own included tests on all main functions and writes down the result
 
 Example:
-
 In:3
 Out:Tests passed: 3/3
 
