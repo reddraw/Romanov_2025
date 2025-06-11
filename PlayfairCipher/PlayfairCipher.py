@@ -92,10 +92,16 @@ while runner>0:
         flags=0
         if(MatrixCreator("wheatson")==['WHEAT', 'SONBC', 'DFGJK', 'LMPQR', 'UVXYZ']):
             flags+=1
+            print("Test 1 passed")
+        else: print("Test 1 is not passed")
         if(BigramsCreator("IDIOCY OFTEN LOOKS LIKE INTELLIGENCE") == ['ID', 'IO', 'CY', 'OF', 'TE', 'NL', 'OX', 'OK', 'SL', 'IK', 'EI', 'NT', 'EL', 'LI', 'GE', 'NC', 'EX']):
             flags+=1
+            print("Test 2 passed")
+        else: print("Test 2 is not passed")
         if(PlayfairCipher(['ID', 'IO', 'CY', 'OF', 'TE', 'NL', 'OX', 'OK', 'SL', 'IK', 'EI', 'NT', 'EL', 'LI', 'GE', 'NC', 'EX'],['WHEAT', 'SONBC', 'DFGJK', 'LMPQR', 'UVXYZ'])=="KFFBBZFMWASPNVCFDUKDAGCEWPQDPNBSNE"):
             flags+=1
+            print("Test 3 passed")
+        else: print("Test 3 is not passed")
         print("Tests passed: "+str(flags)+"/3")
         otvet=0
     else:

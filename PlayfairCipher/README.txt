@@ -13,7 +13,11 @@ Out:KFFBBZFMWASPNVCFDUKDAGCEWPQDPNBSNE
 The program tests its all main parts which are needed to cipher.
 
 In:2
-Out: Tests passed: 3/3
+Out:
+Test 1 passed
+Test 2 passed
+Test 3 passed
+Tests passed: 3/3
 
 3. Exit
 User writes 3 or any other number and program breaks.

@@ -27,7 +27,11 @@ The program passes its own included tests on all main functions and writes down 
 
 Example:
 In:3
-Out:Tests passed: 3/3
+Out:
+Test 1 passed
+Test 2 passed
+Test 3 passed
+Tests passed: 3/3
 
 4. Exit
 User writes 4 or any other number and the program breaks

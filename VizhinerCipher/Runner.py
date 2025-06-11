@@ -50,7 +50,7 @@ while runner>0:
         print("Enter the code")
         key=str(input("Code:"))
         key=KeyWordGenerator(stroka,key)
-        print(VizhenerCypher(stroka,key))
+        print(VizhenerCipher(stroka,key))
         print("Exiting to main menu")
         otvet=0
     elif otvet==2:
@@ -65,11 +65,18 @@ while runner>0:
     elif otvet==3:
         flags=0
         if(KeyWordGenerator("slovo","kod")=="KODKO"):
+            
             flags+=1
+            print("Test 1 passed")
+        else: print("Test 1 is not passed")
         if(VizhenerCypher("slovo","KODKO") == "DASGD"):
             flags+=1
+            print("Test 2 passed")
+        else: print("Test 2 is not passed")
         if(Decipher("DASGD", "KODKO")=="SLOVO"):
             flags+=1
+            print("Test 3 passed")
+        else: print("Test 3 is not passed")
         print("Tests passed: "+str(flags)+"/3")
         otvet=0
     else:
