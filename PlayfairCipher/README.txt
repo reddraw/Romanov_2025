@@ -20,12 +20,7 @@ Test 3 passed
 Tests passed: 3/3
 
 3. Exit
-User writes 3 or any other number and program breaks.
-
-Example:
-In:3
-Out:"Goodbye"
-
+User writes 3 or any other number and program turns off.
 
 Installation.
 
